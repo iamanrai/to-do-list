@@ -50,14 +50,14 @@ function addTask() {
     checkbox.type = 'checkbox';
     checkbox.id = 'checkbox_' +taskIdCounter;
     checkbox.addEventListener('change', function () {
-      handleCheckboxChange(taskElement.id);  // task1
+      handleCheckboxChange(taskElement.id);
     });
 
     const taskTextElement = document.createElement('h3');
     taskTextElement.textContent = taskInput;
 
     const deleteButton = document.createElement('input');
-    deleteButton.type = 'button';
+    deleteButton.type = 'submit';
     deleteButton.value = 'Delete Task';
     deleteButton.id = 'deleteBtn_' + taskIdCounter;
     deleteButton.onclick = function () {
